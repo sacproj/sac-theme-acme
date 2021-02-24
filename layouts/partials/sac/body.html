@@ -1,0 +1,8 @@
+<div id="brand">
+  <div id="acme-logo"><img src="{{ "acme/logo.png" | relURL }}"></div>
+  <div id="acme-footer-slogan">
+    <span>{{ .Site.Params.description | upper }}</span><br>
+    <span><a href="mailto:acme@example.com" target="_blank">acme@example.com</a> <a href="https://acme.example.com" target="_blank">acme.example.com</a></span>
+  </div>
+  <div id="acme-footer-copyright">Copyright © 1940-{{ now.Format "2006" }}, ACME Corporation and/or its affiliates. All rights reserved.</div>
+</div>

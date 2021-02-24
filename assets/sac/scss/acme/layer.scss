@@ -1,0 +1,34 @@
+$primaryColor: #ee7523;
+$secondaryColor: #5087a0;
+
+.acme-slide-cover h1 {
+  color: $secondaryColor !important;
+}
+
+.acme-slide-cover h2 {
+  color: $secondaryColor !important;
+}
+
+.acme-slide-title h1 {
+  color: $primaryColor !important;
+}
+
+.acme-slide-title h2 {
+  color: $secondaryColor !important;
+  font-size: $heading4Size;
+}
+
+.acme-slide-content h1 {
+  color: $primaryColor !important;
+  font-size: $heading3Size;
+}
+
+.acme-slide-content h2 {
+  color: $secondaryColor !important;
+  font-size: $heading4Size;
+}
+
+// Slide-specific vertical centering override
+.reveal .slides section[data-vertical-align-top]{
+	top: 0 !important;
+}

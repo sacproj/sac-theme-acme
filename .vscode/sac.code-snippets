@@ -1,0 +1,107 @@
+{
+  "layerContent": {
+    "prefix": "lc",
+    "body": [
+      "{{< layer title=\"${1:title}\" >}}"
+    ],
+    "description": "sac - Layer content"
+  },
+  "layerSubTitle": {
+    "prefix": "ls",
+    "body": [
+      "{{< layer title=\"${1:title}\" subtitle=\"${2:subtitle}\" >}}"
+    ],
+    "description": "sac - Layer with subtitle"
+  },
+  "layerTitle": {
+    "prefix": "lt",
+    "body": [
+      "{{< layer type=\"title\" title=\"${1:title}\" >}}"
+    ],
+    "description": "sac - Layer title"
+  },
+  "layerCover": {
+    "prefix": "lk",
+    "body": [
+      "{{< layer type=\"cover\" subtitle=\"${2:subtitle}\" >}}"
+    ],
+    "description": "sac - Layer cover"
+  },
+  "layerLogo": {
+    "prefix": "ll",
+    "body": [
+      "{{< layer-logo >}}"
+    ],
+    "description": "sac - Layer logo"
+  },
+  "textColor": {
+    "prefix": "tc",
+    "body": [
+      "text-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Color"
+  },
+  "textHighlightColor": {
+    "prefix": "thc",
+    "body": [
+      "text-highlight-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Highlight Color"
+  },
+  "bgColor": {
+    "prefix": "bg",
+    "body": [
+      "bg-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Background Color"
+  },
+  "textStyle": {
+    "prefix": "ts",
+    "body": [
+      "text-${1|main,code,left,right,center,lighter,normal,bold,italic,overstrike,uppercase,lowercase,capitalize,smallcaps|}"
+    ],
+    "description": "sac - Text Style"
+  },
+  "fragmentTextColor": {
+    "prefix": "fragment-tc",
+    "body": [
+      "fragment-text-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Color Fragment"
+  },
+  "fragmentTextHighlightColor": {
+    "prefix": "fragment-thc",
+    "body": [
+      "fragment-text-highlight-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Highlight Color Fragment"
+  },
+  "fragmentBgColor": {
+    "prefix": "fragment-bg",
+    "body": [
+      "fragment-bg-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Background Color Fragment"
+  },
+  "fragmentCurrentTextColor": {
+    "prefix": "fragment-current-tc",
+    "body": [
+      "fragment-current-text-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Color Fragment Current"
+  },
+  "fragmentCurrentTextHighlightColor": {
+    "prefix": "fragment-current-thc",
+    "body": [
+      "fragment-current-text-highlight-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Text Highlight Color Fragment Current"
+  },
+  "fragmentCurrentBgColor": {
+    "prefix": "fragment-current-bg",
+    "body": [
+      "fragment-current-bg-${1|black,white,darkgray,lightgray,orange,blue,gray,yellow,brown|}"
+    ],
+    "description": "sac - Background Color Fragment Current"
+  }
+}

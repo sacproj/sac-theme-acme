@@ -1,0 +1,5 @@
+{{ $logo := relURL "acme/logo.png" }}
+{{ "<!-- .slide: data-brand=\"false\" -->" | safeHTML }}
+{{ printf "<!-- .slide: data-background-image=\"%s\" -->" $logo | safeHTML }}
+{{ "<!-- .slide: data-background-size=\"20%\" -->" | safeHTML }}
+{{ "<!-- .slide: data-background-position=\"center\" -->" | safeHTML }}

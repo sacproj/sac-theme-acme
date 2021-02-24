@@ -1,0 +1,55 @@
+{{- $type := .Get "type" | default "content" -}}
+{{- $brand := "" -}}
+{{- $title := "" -}}
+{{- $subtitle := "" -}}
+
+{{- if eq $type "cover" -}}
+{{- $brand = .Get "brand" | default "false" -}}
+{{- $title = .Get "title" | default .Site.Params.title }}
+{{- $subtitle = .Get "subtitle" | default .Site.Params.description -}}
+{{- else -}}
+{{- $brand = .Get "brand" -}}
+{{- $title = .Get "title" -}}
+{{- $subtitle = .Get "subtitle" -}}
+{{- end -}}
+
+{{- if eq $type "cover" -}}
+{{- $brand = .Get "brand" | default "false" -}}
+{{- else -}}
+{{- $brand = .Get "brand" -}}
+{{- end -}}
+{{- if eq $type "content" -}}
+{{ print "<!-- .slide: data-vertical-align-top=\"true\" -->" | safeHTML }}
+{{- end -}}
+
+{{- with $brand }}
+{{ printf "<!-- .slide: data-brand=\"%s\"-->" ( . ) | safeHTML }}
+{{- end -}}
+
+<div class="acme-slide-{{ $type }}">
+{{- if eq $type "cover" -}}
+{{- with $title -}}
+<h1 class="acme-title">
+<span class="cover-highlight-orange">{{- . | markdownify -}}</span>
+</h1>
+{{- end -}}
+{{- with $subtitle -}}
+<h2 class="acme-subtitle">
+<span class="cover-highlight-blue">{{- . | markdownify -}}</span>
+</h2>
+{{- end -}}
+
+{{- else -}}
+
+{{- with $title -}}
+<h1 class="acme-title">{{- . | markdownify -}}</h1>
+{{- end -}}
+{{- with $subtitle -}}
+<h2 class="acme-subtitle">{{- . | markdownify -}}</h2>
+{{- end -}}
+
+{{- end -}}
+
+{{- if eq $type "cover" -}}
+<br><br><br>
+{{- end -}}

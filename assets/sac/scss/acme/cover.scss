@@ -1,0 +1,27 @@
+@each $color, $values in $themePalette {
+  h1 .cover-highlight-#{$color} {
+    padding: 10px 10px;
+    color: nth($values, 2) !important;
+    background-color: nth($values, 1);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 2.8em;
+  }
+
+  h2 .cover-highlight-#{$color} {
+    padding: 10px 10px;
+    color: nth($values, 2) !important;
+    background-color: nth($values, 1);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 1.2em;
+  }
+
+  .cover-highlight-#{$color} {
+    padding: 10px 10px;
+    margin: 0 2px;
+    line-height: 2.8em;
+    color: nth($values, 2) !important;
+    background-color: nth($values, 1);
+  }
+}

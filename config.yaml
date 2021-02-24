@@ -1,0 +1,89 @@
+params:
+  title: "ACME"
+  author: "ACME Corporation"
+  description: "That's all Folks!"
+
+  theme:
+    # "light" or "dark" mode
+    mode:
+      light: "#fff"
+    font_size:
+      default: "40px"
+      code: "0.55em"
+      chart: 12
+    main_font:
+      name: "Open Sans, sans-serif"
+      css: "Open Sans.css"
+    code_font:
+      name: "Hack, monospace"
+      css: "hack.css"
+    heading_font:
+      name: "Raleway, sans-serif"
+      css: "Raleway.css"
+    box_shadow: "0px 5px 1500px rgba(0, 0, 0, 0.15)"
+    colors:
+      background: "#fff"
+      main: "#261036"
+      heading: "#f8782f"
+      link: "#f8782f"
+      link_hover: "lighten( #f8782f, 15% )"
+      selection: "#fff"
+      selection_background: "#f8782f"
+      code: "#fff"
+      code_background: "#261036"
+      chart:
+        palette:
+          - "#2f60b5"
+          - "#f8782f"
+          - "#9399a5"
+          - "#fdfc52"
+          - "#59271e"
+          - "#261036"
+          - "#c6c6c6"
+          - "#878787"
+        fill:
+          - "rgba(80, 135, 160, 0.2)"
+          - "rgba(238, 117, 35, 0.2)"
+          - "rgba(149, 193, 31, 0.2)"
+          - "rgba(87, 29, 150, 0.2)"
+          - "rgba(159, 107, 80, 0.2)"
+          - "rgba(24, 24, 40, 0.2)"
+          - "rgba(198, 198, 198, 0.2)"
+          - "rgba(135, 135, 135, 0.2)"
+        grid: "#c6c6c6"
+    palette:
+      black:
+        - "#261036"
+        - "#fff"
+      white:
+        - "#fff"
+        - "#261036"
+      darkgray:
+        - "#878787"
+        - "#fff"
+      lightgray:
+        - "#c6c6c6"
+        - "#261036"
+      orange:
+        - "#f8782f"
+        - "#fff"
+      blue:
+        - "#2f60b5"
+        - "#fff"
+      gray:
+        - "#9399a5"
+        - "#fff"
+      yellow:
+        - "#fdfc52"
+        - "#261036"
+      brown:
+        - "#59271e"
+        - "#fff"
+
+  geometry:
+    width: 960
+    height: 700
+    margin: 0.04
+    scale:
+      min: 0.2
+      max: 4.0

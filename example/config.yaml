@@ -1,0 +1,13 @@
+baseURL: https://example.org/
+languageCode: en-us
+disableKinds: ["taxonomy", "taxonomyTerm", "RSS", "sitemap"]
+outputs:
+  home: ["sac"]
+  page: ["sac"]
+  section: ["sac"]
+themesDir: "/usr/local/share/sac/themes"
+theme: ["acme/1.0.0","sac/2.0.0"]
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

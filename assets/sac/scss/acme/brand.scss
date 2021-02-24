@@ -1,0 +1,52 @@
+$sloganFontSize: 1.1em;
+$footerFontSize: 0.7em;
+$copyrightColor: #c6c6c6;
+$sloganColor: #181828;
+$linkColor: #ee7523;
+
+#brand {
+  font-family: $mainFont;
+  display: none;
+}
+
+#brand.has-dark-background {
+  #acme-footer-slogan {
+    color: #fff;
+  }
+}
+
+#acme-logo>img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20%;
+  z-index: 1;
+}
+
+#acme-footer-slogan {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  z-index: 1;
+  color: $sloganColor;
+
+  >span {
+    font-size: $sloganFontSize;
+    font-weight: bold;
+
+    >a {
+      font-size: $footerFontSize;
+      font-weight: lighter;
+      color: $linkColor;
+    }
+  }
+}
+
+#acme-footer-copyright {
+  position: absolute;
+  bottom: 20px;
+  right: 120px;
+  z-index: 1;
+  font-size: $footerFontSize;
+  color: $copyrightColor;
+}
