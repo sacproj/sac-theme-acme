@@ -44,4 +44,5 @@ sac deck new code
 
 ## ACME customizations
 - See `assets` and `layouts` directory for Hugo theme override
+- See `content` for default slides deck (as template)
 - See `.vscode` for specific snippets
