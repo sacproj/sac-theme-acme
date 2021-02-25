@@ -33,8 +33,8 @@ sac desk new example sac/2.0.0 acme/1.0.0
 - Create some slides
 ```
 cd example
-sac slides new content.md
-sac slides new end.md
+sac content new content.md
+sac content new end.md
 ```
 - Develop content and show live update
 ```
