@@ -46,3 +46,9 @@ sac deck new code
 - See `assets` and `layouts` directory for Hugo theme override
 - See `content` for default slides deck (as template)
 - See `.vscode` for specific snippets
+
+# Authors
+Developed with passion by Stéphane Este-Gracias and great open source [contributors](https://github.com/sacproj/sac-theme-acme/graphs/contributors).
+
+# License
+sac-theme-acme's code is released under [MIT license](LICENSE).
