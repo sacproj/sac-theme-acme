@@ -55,13 +55,6 @@
     ],
     "description": "sac - Background Color"
   },
-  "textStyle": {
-    "prefix": "ts",
-    "body": [
-      "text-${1|main,code,left,right,center,lighter,normal,bold,italic,overstrike,uppercase,lowercase,capitalize,smallcaps|}"
-    ],
-    "description": "sac - Text Style"
-  },
   "fragmentTextColor": {
     "prefix": "fragment-tc",
     "body": [
