@@ -22,13 +22,13 @@ sac theme install github sacproj/sac-theme-acme
 sac theme installed
 /usr/local/share/sac/themes
 ├── acme
-│   └── 1.0.0
+│   └── 1.0.0
 └── sac
     └── 2.0.0
 ```
 - Create a new slides deck in `example` directory
 ```
-sac desk new example sac/2.0.0 acme/1.0.0
+sac desk new example sac acme
 ```
 - Create some slides
 ```
@@ -38,7 +38,7 @@ sac content new end.md
 ```
 - Develop content and show live update
 ```
-sac deck new code
+sac deck code
 ```
 - Open brower to http://localhost:1313
 
